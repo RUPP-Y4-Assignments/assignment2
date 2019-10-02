@@ -1,0 +1,130 @@
+.fix-content{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: lightgrey;
+    z-index: 10;
+    display: none;
+}
+.h-s-content{
+    z-index: 11;
+}
+.content-menu{
+    float: left;
+    padding: 0;
+    list-style: none;
+    display: grid;
+}
+.sub-menu{
+    color: red;
+}
+.sub-menu-1{
+    padding: 10px;
+    list-style: none;
+    box-sizing: border-box;
+}
+.sub-menu-2{
+    padding: 10px;
+    list-style: none;
+    box-sizing: border-box;
+}
+.sub-menu-1 li, .sub-menu-2 li{
+    float: left;
+    width: 20%;
+    margin-bottom: 10px;
+    background: rgba(0,0,0,.03);
+}
+.sub-menu-1 li a, .sub-menu-2 li a{
+    background: none;
+}
+.sub-menu-1 li a, .sub-menu-2 li a{
+    text-decoration: none;
+    color: rgba(0,0,0,.50);
+    padding: 0 15px;
+    border-left: 3px solid cadetblue;
+}
+.sub-menu-1 li:hover a, .sub-menu-2 li:hover a{
+    color: black !important;
+}
+.show-content{
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0;
+}
+.show-oupakor{
+    width: 100%;
+    min-height: 73vh;
+    opacity: 0;
+    animation: show_oupakor 1s ease-in-out forwards;
+    overflow: hidden;
+}
+.show-oupakor h1{
+    margin-left: -100%;
+    animation: show_oupakor_h1 1s ease-out forwards;
+}
+.show-oupakor p{
+    opacity: 0;
+    text-align: justify;
+    animation: show_oupakor_p 2s ease-out forwards;
+    animation-delay: 1s;
+}
+@keyframes show_oupakor{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.2;
+    }
+    25%{
+        opacity: 0.4;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    75%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes show_oupakor_h1{
+    0%{
+        margin-left: -100%;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
+@keyframes show_oupakor_p{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.2;
+    }
+    25%{
+        opacity: 0.4;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    75%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.show-vongphleng{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    /* background: salmon; */
+    display: none;
+}
