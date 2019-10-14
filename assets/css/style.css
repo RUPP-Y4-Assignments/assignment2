@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url("../../lib/fonts/icomoon/icomoon.eot?srf3rx");
+    src: url("../../lib/fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../../lib/fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../../lib/fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../../lib/fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+#krb-page{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#krb-aside{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 15%;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    z-index: 1001;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    border-right: 2px solid #6b6b6b3a;
+}
+
+#krb-aside #krb-main-menu ul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#krb-aside #krb-main-menu ul li{
+    margin: 0 0 2em 0;
+    padding: 0;
+    list-style: none;
+}
+
+#krb-aside #krb-main-menu ul li a{
+    color: #020202ea;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+#krb-aside .krb-footer{
+    position: absolute;
+    bottom: 40px;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    color: #020202ea;
+    padding: 0 20px;
+
+}
+
+#krb-aside .krb-footer span{
+    display: block;
+}
+
+#krb-aside .krb-footer ul{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#krb-aside .krb-footer ul li{
+    padding: 0;
+    margin: 0;
+    display: inline;
+    list-style: none;
+}
+
+#krb-aside .krb-footer ul li a{
+    color: #020202be;
+    padding: 4px;
+}

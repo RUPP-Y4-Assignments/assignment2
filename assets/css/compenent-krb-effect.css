@@ -1,0 +1,25 @@
+.btn-krb{
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
+
+.btn-krb-effect-bot-bor{
+    position: relative;
+}
+
+.btn-krb-effect-bot-bor::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 3px;
+    bottom: 0%; left: 50%;
+    background: red;
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+
+.btn-krb-effect-bot-bor:hover::after{
+    left: 0%;
+    width: 100%;
+}
