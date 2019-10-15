@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Moul|Moulpali&display=swap');
 @font-face {
     font-family: 'icomoon';
     src: url("../../lib/fonts/icomoon/icomoon.eot?srf3rx");
@@ -13,8 +14,8 @@
     overflow: hidden;
 }
 
-#krb-aside{
-    padding-top: 50px;
+#krb-page #krb-aside{
+    padding-top: 5px;
     padding-bottom: 50px;
     position: fixed;
     bottom: 0;
@@ -43,6 +44,9 @@
 }
 
 #krb-aside #krb-main-menu ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -56,7 +60,7 @@
 
 #krb-aside #krb-main-menu ul li a{
     color: #020202ea;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 600;
     font-family: "Roboto", Arial, sans-serif;
 }
@@ -72,10 +76,12 @@
     font-size: 14px;
     text-align: center;
     width: 100%;
+    height: 15%;
     font-weight: 400;
+    background-color: orchid;
     color: #020202ea;
-    padding: 0 20px;
-
+    padding: 35px 20px;
+    box-sizing: border-box;
 }
 
 #krb-aside .krb-footer span{
@@ -99,22 +105,26 @@
     color: #020202be;
     padding: 4px;
 }
-
-#krb-aside-slide{
-    width: 100%;
+    /*  */
+#krb-page #krb-aside-slide{
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
     height: 100vh;
 }
 
 #krb-aside-slide .krb-bg-slide{
     width: 100%;
-    height: 100%;
+    height: 200vh;
+    background: red !important;
     position: relative;
 }
 
 #krb-aside-slide .krb-bg-slide img{
-    width: 85%;
+    width: 100%;
     height: 100%;
-    float: right;
+    float: left;
 }
 
 #krb-aside-slide .krb-bg-cover{
