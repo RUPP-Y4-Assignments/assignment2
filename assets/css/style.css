@@ -48,6 +48,10 @@
     font-family: "Roboto", Arial, sans-serif;
 }
 
+#krb-aside #krb-main-menu ul li a:hover{
+    text-decoration: none;
+}
+
 #krb-aside .krb-footer{
     position: absolute;
     bottom: 40px;
@@ -81,3 +85,31 @@
     color: #020202be;
     padding: 4px;
 }
+
+#krb-aside-slide{
+    width: 100%;
+    height: 100vh;
+}
+
+#krb-aside-slide .krb-bg-slide{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#krb-aside-slide .krb-bg-slide img{
+    width: 85%;
+    height: 100%;
+    float: right;
+}
+
+#krb-aside-slide .krb-bg-cover{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 85%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.678);
+}
+
