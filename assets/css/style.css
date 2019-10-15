@@ -30,7 +30,7 @@
 .fixed.left-side>#krb-aside{
     left: 0;
     overflow-y: scroll;
-    width: 14.4%;
+    width: 15%;
 }
 
 .fixed.right-side>#krb-aside{
@@ -147,8 +147,9 @@
     height: 100vh;
 }
 .center-side {
-    float: left;
+    position: absolute;
     width: 70%;
+    top: 0;
     left: 15%;
     background: blue; height: 2000px;
 }
@@ -158,3 +159,29 @@
     width: 15%;
     background: rgb(214, 209, 209); height: 100vh;
 }
+
+#btn-menu{
+    display: none;
+    padding: 20px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .fixed.left-side>#krb-aside{
+        display: none;
+        overflow: hidden;
+        width: 70%;
+    }
+    .fixed.right-side{
+        display: none;
+    }
+    .center-side{
+        width: 100%;
+        left: 0;
+    }
+
+    #btn-menu{
+        display: block;
+    }
+
+  }
