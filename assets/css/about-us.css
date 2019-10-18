@@ -1,0 +1,23 @@
+.title-blog{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 4px 2px -2px rgba(163, 162, 162, 0.8);
+}
+.title-blog h1{
+    text-transform: uppercase;
+}
+.describe-content{
+    background: red;
+    padding: 0;
+    box-sizing: border-box;
+}
+.institute{
+    width: 100%;
+    padding: 10px;
+    background: rgb(208, 212, 211)
+}
+.institute h3, h4{
+    text-align: center;
+}
