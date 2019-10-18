@@ -6,43 +6,77 @@
     font-weight: normal;
     font-style: normal;
   }
-
-
+body{
+    position: relative;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/* wrpper page */
 #krb-page{
     width: 100%;
-    /* position: relative; */
-    overflow: hidden;
+    position: relative;
+    height: auto;
 }
-
-#krb-page #krb-aside{
+/* wrap left and right side */
+#krb-aside{
+    width: 100%;
+    height: 100%;
     padding-top: 5px;
     padding-bottom: 50px;
-    position: fixed;
-    bottom: 0;
-    top: 0;
-    z-index: 1001;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
     border-right: 2px solid #6b6b6b3a;
 }
-
-.fixed.left-side>#krb-aside{
+/* modify #krb-aside the same as left side */
+/* .fixed.left-side>#krb-aside{
     left: 0;
-    overflow-y: scroll;
-    width: 15%;
-}
-
-.fixed.right-side>#krb-aside{
+    width: 100%;
+} */
+/* modify #krb-aside the same as right side */
+/* .fixed.right-side>#krb-aside{
     right: 0;
-    width: 15%;
-    overflow-y: scroll;
+    width: 100%;
     direction: rtl;
-}
+} */
+/* wrpper left and right menu */
 #krb-aside #krb-main-menu{
     padding-bottom: 20px;
 }
 
+/* fixed position of left and right side */
+.fixed{
+    position: fixed;
+    overflow-y: scroll;
+}
+
+.fixed.left-side {
+    top: 0;
+    left: 0;
+    width : 15%;
+    height: 100vh;
+}
+.center-side {
+    position: absolute;
+    width: 70%;
+    top: 0;
+    left: 15%; 
+}
+.content{
+    padding: 0;
+}
+.fixed.right-side {
+    top: 0;
+    right: 0;
+    width: 15%;
+    background: rgb(214, 209, 209); height: 100vh;
+    overflow-x: hidden;
+    direction: rtl;
+}
+
+            /* set customize style of menu */
+/* start */
+            /* main menu */
 #krb-aside #krb-main-menu ul{
     display: grid;
     justify-content: center;
@@ -68,7 +102,7 @@
 #krb-aside #krb-main-menu ul li a:hover{
     text-decoration: none;
 }
-
+    /* footer menu */
 #krb-aside .krb-footer{
     margin-top: 20px;
     position: absolute;
@@ -105,18 +139,15 @@
     color: #020202be;
     padding: 4px;
 }
-    /*  */
+/* end */
 #krb-page #krb-aside-slide{
-    position: absolute;
-    top: 0;
-    left: 15%;
-    width: 70%;
-    height: 100vh;
+    width: 100%;
+    /* height: 100vh; */
 }
 
 #krb-aside-slide .krb-bg-slide{
     width: 100%;
-    height: 200vh;
+    height: 100vh;
     background: red !important;
     position: relative;
 }
@@ -132,45 +163,26 @@
     z-index: 10;
     top: 0;
     right: 0;
-    width: 85%;
+    width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.678);
 }
-.fixed{
-    position: fixed;
-}
-
-.fixed.left-side {
-    left: 0;
-    width : 15%;
-    /* background: red;  */
-    height: 100vh;
-}
-.center-side {
-    position: absolute;
-    width: 70%;
-    top: 0;
-    left: 15%;
-    background: blue; height: 2000px;
-}
-
-.fixed.right-side {
-    right: 0;
-    width: 15%;
-    background: rgb(214, 209, 209); height: 100vh;
-}
-
-#btn-menu{
+.krb-bg-cover #btn-menu{
     display: none;
-    padding: 20px;
-    font-size: 25px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
 }
-
+    /* @media query responsive */
 @media screen and (max-width: 768px) {
-    .fixed.left-side>#krb-aside{
-        display: none;
-        overflow: hidden;
-        width: 70%;
+    .fixed.left-side{
+        left: -50%;
+        width: 50%;
+        z-index: 9;
+        background: white;
     }
     .fixed.right-side{
         display: none;
@@ -178,6 +190,7 @@
     .center-side{
         width: 100%;
         left: 0;
+        z-index: 8;
     }
 
     #btn-menu{

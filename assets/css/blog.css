@@ -1,0 +1,305 @@
+/* alert comment */
+.pop-up{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 20000;
+    display: none;
+}
+.fix-comment{
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    width: 40%;
+    height: 90vh;
+    padding: 0 5px; 
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid black;
+    overflow-y: scroll;
+}
+.fix-comment .label-comment{
+    margin-bottom: 0;
+    text-align: center;
+    color: black;
+}
+.fix-comment .close{
+    font-size: 20px;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+    cursor: pointer;
+}
+.box-like{
+    width: 100%; 
+    height: 50px; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.show-comment{
+    width: 100%; 
+    margin-top: 20px; 
+    box-sizing: border-box;
+}
+.show-comment tr td:nth-child(1){
+    width: 15%; 
+    padding: 5px 10px; 
+    text-align: right; 
+    box-sizing: border-box; 
+    border-radius: 150px;
+} 
+.show-comment tr td:nth-child(1) img{
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+}
+.show-comment tr td:nth-child(2){
+    padding:10px; 
+    box-sizing: border-box; 
+    background: rgba(235, 229, 229, 0.3);
+}
+.show-comment tr td:nth-child(2) .user-name{
+    margin: 0;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.show-comment tr td:nth-child(2) .user-comment{
+    margin: 0; 
+    margin-top: -10px;
+}
+.write-comment{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-top: 1px solid lightgrey;
+}
+.write-comment table tr td:nth-child(1){
+    width: 90%;
+}
+.write-comment input[type=text]{
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 1px solid gray;
+    background: rgb(247, 245, 245);
+}
+.write-comment input[type=text]:focus{
+    outline: none;
+    border-color: dodgerblue;
+}
+.write-comment table tr td:nth-child(2){
+    width: 10%;
+}
+.write-comment button{
+    float: right;
+    padding: 5px 10px;
+    border-radius: 10%;
+    box-sizing: border-box;
+    background: none;
+    border: 1px solid grey;
+}
+.write-comment button:hover{
+    border-color: dodgerblue;
+}
+.write-comment button i{
+    color: gray;
+}
+.write-comment button:hover i{
+    color: dodgerblue;
+}
+/* center side */
+.center-side{
+    width: 85%;
+}
+.header{
+    float: left;
+    padding: 0 10px;
+}
+.menu-side, .title-blog{
+    float: left;
+    width: 100%;
+    padding: 0;
+}
+.menu-side{
+    padding: 20px 0 0 0;
+    display: none;
+}
+.menu-side #btn-menu, #btn-sub-menu{
+    float: left;
+    width: 50%;
+    height: 100%;
+    font-size: 35px;
+    color: black; 
+}
+.menu-side #btn-menu i{
+    float: left;
+    margin-left: -4px;
+}
+.menu-side #btn-sub-menu i{
+    float: right;
+    margin-right: -4px;
+}
+
+.title-blog{
+    float: left;
+    width: 100%;
+    padding: 30px 0 20px 0;
+}
+.title-blog h1{
+    float: left;
+    width: 40%;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.filter-login{
+    float: left;
+    width: 60%;
+    height: 43px;
+    overflow: hidden;
+}
+.filter-login table{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.filter-login table tr td:nth-child(1){
+    width: 40%;
+    height: 100%;
+}
+.filter-login table tr td:nth-child(1) input[type=text]{
+    width: 80%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 1px solid gray;
+}
+.filter-login table tr td:nth-child(1) i{
+    float: right;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 1px solid gray;
+    background: rgb(247, 245, 245);
+    cursor: pointer;
+}
+.filter-login table tr td:nth-child(1) input[type=text]:focus{
+    outline: none;
+    border-color: dodgerblue;
+}
+.filter-login table tr td:nth-child(1) i:hover{
+    color: dodgerblue;
+    border-color: dodgerblue;
+}
+.filter-login table tr td:nth-child(2){
+    width: 30%;
+    height: 100%;
+}
+.filter-login table tr td:nth-child(2) img{
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.content{
+    float: left;
+    padding: 5px;
+}
+.box{
+    float: left;
+    padding: 5px;
+}
+.box-content{
+    float: left;
+    width: 100%;
+    height: 600px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    background: rgb(245, 243, 243);
+}
+.box-content-img{
+    float: left;
+    width: 100%;
+    height: 45%;
+    background: brown;
+}
+.box-content-img img{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.box-content-header{
+    float: left;
+    width: 100%;
+    height: 48%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.box-content-header h1{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+    padding: 20px 0 10px 0;
+}
+.box-content-header span{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: gray;
+}
+.box-content-header p{
+    padding-top: 15px;
+    color: rgb(71, 71, 71);
+}
+.box-content-footer{
+    float: left;
+    width: 100%;
+    height: 7%;
+    border-top: 0.5px solid lightgray;
+    box-sizing: border-box;
+}
+.like{
+    text-decoration: none;
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 6px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-right: 0.5px solid lightgray;
+    box-sizing: border-box;
+}
+.like i{
+    margin-left: 20%;
+}
+.comment{
+    text-decoration: none;
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 6px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.comment i{
+    margin-left: 15%;
+}
+.like:hover, .comment:hover{
+    background: rgba(0,0,0,.1);
+}
