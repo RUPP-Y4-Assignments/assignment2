@@ -9,15 +9,127 @@
     text-transform: uppercase;
 }
 .describe-content{
-    background: red;
-    padding: 0;
+    padding: 10px;
     box-sizing: border-box;
 }
 .institute{
     width: 100%;
-    padding: 10px;
+    padding: 0px;
     background: rgb(208, 212, 211)
 }
 .institute h3, h4{
     text-align: center;
+}
+/* project member */
+.member-title{
+    float: left;
+    width: 100%;
+    background: chocolate;
+}
+.member-title h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+.project-member{
+    float: left;
+    width: 100%;
+    padding: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: yellow;
+}
+.profile{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 5px;
+    border-radius: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    overflow: hidden;
+    left: 0;
+}
+.profile:hover{
+    transition: 0.5s;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+.image{
+    float: left;
+    width: 150px;
+    height: 100%;
+}
+.member-info{
+    float: left;
+    width: 750px;
+    /* display: none; */
+    height: 100%;
+    padding-left: 30px;
+    box-sizing: border-box;
+    transition: 0.5;
+}
+.member-info table{
+    margin-top: 20px;
+}
+.profile:hover .member-info{
+    display: block;
+}
+/* lecturer profile */
+.lecturer{
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: yellow;
+}
+.profile-lec{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 5px;
+    border-radius: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    overflow: hidden;
+    left: 0;
+}
+.profile-lec:hover{
+    transition: 0.5s;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+.image-lec{
+    float: left;
+    width: 150px;
+    height: 100%;
+}
+.lec-info{
+    float: left;
+    width: 750px;
+    /* display: none; */
+    height: 100%;
+    padding-left: 30px;
+    box-sizing: border-box;
+    transition: 0.5;
+}
+.lec-info table{
+    margin-top: 20px;
+}
+.profile-lec:hover .member-info{
+    display: block;
+}
+/* our status */
+.our-status{
+    float: left;
+    width: 100%;
+    height: 100px;
+    margin-top: 15px;
+    background: red;
 }

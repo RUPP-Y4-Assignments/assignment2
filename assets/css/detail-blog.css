@@ -1,0 +1,109 @@
+.right-side{
+    padding: 10px;
+    box-sizing: border-box;
+}
+.right-side p{
+    margin: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(189, 184, 184);
+}
+.p-blog{
+    list-style: none;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    box-shadow: 0 0 1px rgba(34, 25, 25, 0.2);
+}
+.p-blog li{
+}
+.p-blog li a{
+    width: 100%;
+    padding-top: 10px;
+    text-decoration: none;
+    display: block;
+    background: rgb(252, 252, 252);
+    color: black;
+}
+.p-blog li a:hover{
+    background: rgb(240, 239, 239);
+}
+.p-blog li a img{
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.content{
+    padding: 10px;
+    box-shadow: 0 0 1px rgba(34, 25, 25, 0.1);
+}
+.wrap-content{
+    float: left;
+    width: 100%;
+    background: rgb(251, 251, 251);
+}
+.user-profile{
+    float: left;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(189, 184, 184);
+}
+.user-profile img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.user-profile h3{
+    margin-top: 30px;
+    font-size: 30px;
+}
+.about-post{
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(189, 184, 184);
+
+}
+.about-post h2{
+    font-size: 28px;
+}
+.about-post span{
+    font-size: 14px;
+    color: rgb(158, 152, 152);
+}
+.text{
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+.text p{
+    font-size: 18px;
+}
+.image{
+    float: left;
+    width: 100%;
+}
+.an-image{
+    float: left;
+    height: 700px;
+    padding: 0;
+    border-bottom: 1px solid white;
+}
+.an-image img{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.b-video{
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+    padding: 0;
+}
+.a-b-video{
+    float: left;
+    height: 500px;
+}

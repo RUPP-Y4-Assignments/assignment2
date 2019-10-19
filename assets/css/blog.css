@@ -166,7 +166,6 @@
 .filter-login{
     float: left;
     width: 60%;
-    height: 43px;
     overflow: hidden;
 }
 .filter-login table{
@@ -207,15 +206,54 @@
     width: 30%;
     height: 100%;
 }
-.filter-login table tr td:nth-child(2) img{
+.filter-login table tr td:nth-child(2) span{
     float: right;
+    border: 1px solid lightgray;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.filter-login table tr td:nth-child(2) img{
+    /* float: right; */
+    margin-right: 10px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
+.filter-login table tr td:nth-child(2) span i{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.drop-profile{
+    position: absolute;
+    top: 80%;
+    right: 10px;
+    width: 12.7%;
+    display: none;
+    background: rgb(235, 235, 231);
+    z-index: 300000;
+}
+.drop-profile ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.drop-profile ul li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    color: black;
+    transition: 0.2s;
+}
+.drop-profile ul li a:hover{
+    background: rgb(191, 199, 191);
+    transition: 0.2s;
+
+}
 .content{
     float: left;
     padding: 5px;
+    z-index: 10000;
 }
 .box{
     float: left;

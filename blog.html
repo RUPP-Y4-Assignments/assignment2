@@ -122,7 +122,15 @@
                                             <input type="text" placeholder="Search..."><i id="search-blog" class="fas fa-search"></i>
                                         </td>
                                         <td>
-                                            <img src="images/lymeng.jpg">
+                                            <span>
+                                                <img src="images/lymeng.jpg">Seng Lymeng<i id="drop-profile" class="fas fa-caret-down"></i>    
+                                            </span>                                        
+                                            <div class="drop-profile">
+                                                <ul>
+                                                    <li><a href="#">Login</a></li>
+                                                    <li><a href="#">Logout</a></li>
+                                                </ul>
+                                            </div>
                                         </td>
                                     </tr>
                                 </table>
@@ -421,9 +429,10 @@
         $('.close').on("click", function(){
             $('.pop-up').css("display", "none");
         });
-        // $('.pop-up').on("click", function(){
-        //     $('.pop-up').css("display", "none");
-        // });
+        // drop profile
+        $('#drop-profile').click(function(){
+            $('.drop-profile').slideToggle(200);
+        });
     });
 </script>
 </html>
