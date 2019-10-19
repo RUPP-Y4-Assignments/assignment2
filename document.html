@@ -25,6 +25,9 @@
     <!-- compenents effect provided by khemrakbot (krb) -->
     <link rel="stylesheet" href="assets/css/compenent-krb-effect.css">
 
+    <!-- font style -->
+    <link href="https://fonts.googleapis.com/css?family=Moulpali&display=swap" rel="stylesheet">
+
     <!-- style effect-->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/detail-blog.css">
@@ -50,7 +53,7 @@
             <h1 id="krb-logo" style="text-align: center"><a href="index.html">Marble</a></h1> <br>
             <!-- main menu -->
             <nav id="krb-main-menu" role="navigation">
-                <ul>
+                <ul style="">
                     <li class="krb-active"><a class="btn-krb btn-krb-effect-bot-bor"
                             href="index.html">ទំព័រដើម</a></li>
                     <li><a class="btn-krb btn-krb-effect-bot-bor" href="blog.html">ឯកសារ</a></li>
@@ -115,8 +118,8 @@
                     <div class="col-xl-12 content">
                         <div class="wrap-content">
                             <div class="user-profile">
-                                <img src="images/lymeng.jpg">
-                                <h3>Seng Lymeng</h3>
+                                <!-- <img src="images/lymeng.jpg"> -->
+                                <h3>ឯកសារ</h3>
                             </div>
                             <div class="about-post">
                                 <h2>ភ្លេងពិណ្យពាទ្យ</h2>
@@ -141,9 +144,9 @@
                                 គប្បី​ជម្រាប​ផងដែរ​ថា ចំពោះ​ខ្មែរ​សុ​រិ​ន្ទ្រ បុរីរម្យ​សព្វថ្ងៃ ឆ្អឹងថ្គាម ខ្នាយ និង​ឈាម​សត្វព្រៃ​មួយចំនួន​មាន​តួនាទី​យ៉ាងសំខាន់​ក្នុងការ​រក្សា​រោគ ឬ​ជំងឺ ។ ឧទាហរណ៍​គេ​យក​ថ្គាមដំរី​ទៅ​ដុស​នឹង​ថ្ម ហើយ​ស្រង់ទឹក​យកទៅបរិភោគ​ដើម្បី​ការពារ​ពុល​ថ្នាំ និង​ធ្វើឱ្យ​ត្រជាក់​ខ្លួនប្រាណ ។ ភ្លុក​ដំរី និងខ្នាយតាន់​ជ្រូកព្រៃ​វិញ ​គេ​ប្រើ​សម្រាប់កែ​ក្តៅខ្លួន​ដែរ ។ ឆ្អឹង​ត្មាត និង​ឆ្អឹង​អកសម្រាប់​កែរោគ​គ្រុនញាក់​រវើរវាយ និងកែរោគ​ស្ត្រី​ដែល​សម្រាលកូន​មិន​ចេញ​ដូច​ប្រក្រតី ។ ជូន​កាល​គេ​ក៏​យក​ឈាម​រមាស​កែ​ក្រំ និង​ជាំ​ខ្ទុះ ពេលដែល​ធ្លាក់​ពី​ខ្នង​ដំរី ឬ​ដើមឈើ​ជាដើម ។ ចំពោះ​ចង្កូមខ្លា គេ​យកមក​ដាក់​ពាក់​ជា​បន្តោង​នៅ​ក​ដើម្បី​ការពារ​សត្វព្រៃ ហើយ​បើ​ចង្កូមខ្លា​នោះ​មាន​ប្រហោង​ វា​កាន់តែមាន​ប្រសិទ្ធភាព​ទៅទៀត ព្រោះ​ព្រាយ​បី​សាច​ភ័យខ្លាច​ខ្លាំងណាស់ ។
                             </p>
                         </div>
-                        <!-- image -->
-                        <div class="image">
-                            <h5>ខាងក្រោមជារូបភាព៖</h5>
+                        <!-- image --> 
+                        <div class="image" style="margin-left: 10%">
+                            <!-- <h5>ខាងក្រោមជារូបភាព៖</h5> -->
                             <div class="col-xl-12 an-image">
                                 <img src="images/bunthouen.jpg">
                             </div>
@@ -185,6 +188,11 @@
     $(document).ready(function(){
         var i = 0, k = 0;
         $('.oupakor').click(function(){
+            k = 0;
+            $('.sub-menu-2').slideUp(100);
+            $('.vongphleng').css({"background":"orange"});
+            $('.vongphleng').find($(".right")).removeClass('fa-chevron-down');
+            $('.vongphleng').find($(".right")).addClass('fa-chevron-right');
             if(i == 0){
                 $('.oupakor').css({"background":"yellow"});
                 $('.oupakor').find($(".right")).addClass('fa-chevron-down');
@@ -192,7 +200,7 @@
                 i=1;
             }
             else{
-                $('.oupakor').css({"background":"oranged"});
+                $('.oupakor').css({"background":"orange"});
                 $('.oupakor').find($(".right")).removeClass('fa-chevron-down');
                 $('.oupakor').find($(".right")).addClass('fa-chevron-right');
                 i=0;
@@ -200,6 +208,11 @@
             $('.sub-menu-1').slideToggle();
         });
         $('.vongphleng').click(function(){
+            i = 0;
+            $('.oupakor').css({"background":"orange"});
+            $('.sub-menu-1').slideUp(100);
+            $('.oupakor').find($(".right")).removeClass('fa-chevron-down');
+                $('.oupakor').find($(".right")).addClass('fa-chevron-right');
             if(k == 0){
                 $('.vongphleng').css({"background":"yellow"});
                 $('.vongphleng').find($(".right")).addClass('fa-chevron-down');
@@ -207,7 +220,7 @@
                 k=1;
             }
             else{
-                $('.vongphleng').css({"background":"oranged"});
+                $('.vongphleng').css({"background":"orange"});
                 $('.vongphleng').find($(".right")).removeClass('fa-chevron-down');
                 $('.vongphleng').find($(".right")).addClass('fa-chevron-right');
                 k=0;

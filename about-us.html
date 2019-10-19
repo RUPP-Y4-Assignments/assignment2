@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Blog</title>
+    <title>About Us</title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 
@@ -82,19 +82,20 @@
                             <span id="btn-sub-menu"><i class="icon-th-menu"></i></span>
                         </div>
                         <div class="title-blog text-center">
-                            <h1>About Us</h1>
+                            <h1>អំពីយើង</h1>
                         </div>
                     </div>
                     <div class="col-xl-12 describe-content">
                         <div class="institute">
-                            <h3>Royal University of Phnom Penh</h3>
-                            <h4>Information Technology</h4>
-                            <h4>Khmer Instrument</h4>
-                            <h4>Group : 4</h4>
+                            <h3>សាកលវិទ្យាល័យ ភូមិន្ទភ្នំពេញ</h3><br>
+                            <h4>ពត៌មានវិទ្យា</h4><br>
+                            <h4>ឧបករណ៍​តន្ត្រីខ្មែរ</h4> <br>
+                            <h4>ក្រុមទី​ ៤</h4>
                         </div>
                         <!-- about lecturer -->
                         <div class="member-title">
-                            <h1>Leader</h1>
+                            <!-- <h1>Leader</h1> -->
+                            <hr>
                         </div>
                         <div class="lecturer">
                             <div class="profile-lec">
@@ -121,7 +122,8 @@
                         </div>
                         <!-- project member -->
                         <div class="member-title">
-                            <h1>our member</h1>
+                            <hr>
+                            <h3>សមាជិក</h3>
                         </div>
                         <div class="col-xl-12 project-member">
                             <div class="profile">
@@ -287,17 +289,17 @@
         $('.profile').mousemove(function(){
             var index = $(this).index();
             $('.profile').css({"width":"0"});
-            $('.profile').eq(index).css({"width":"950px","background":"red"});
+            $('.profile').eq(index).css({"width":"950px","background":"#C6D0E1"});
         });
         $('.profile').mouseleave(function(){
             $('.profile').css({"background":"none"});
             $('.profile').css({"width":"150px"});
         });
-        // lecturer effect
+        // lecturer effect11
         $('.profile-lec').mousemove(function(){
             var index = $(this).index();
             $('.profile-lec').css({"width":"0"});
-            $('.profile-lec').eq(index).css({"width":"950px","background":"red"});
+            $('.profile-lec').eq(index).css({"width":"950px","background":"#C6D0E1"});
         });
         $('.profile-lec').mouseleave(function(){
             $('.profile-lec').css({"background":"none"});

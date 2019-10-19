@@ -7,7 +7,7 @@
     text-decoration: none;
     display: block;
     padding: 5px 10px;
-    background: orange !important;
+    background: orange;
 }
 .wrap-menu li a:hover{
     background: orangered;
@@ -29,8 +29,23 @@
     text-decoration: none;
     display: block;
     padding: 5px 20px;
-    background: orange !important;
+    background: orange;
 }
 .sub-menu-1 ul li a:hover, .sub-menu-2 ul li{
     background: orangered;
+}
+.text, .image, .b-video{
+    font-family: 'Khmer', cursive;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.an-image{
+    border-left: 1px solid white;
+}
+.text p{
+    font-size: 19px;
+}
+.image{
+    width: 80%;
+    margin: auto;
 }
