@@ -2,6 +2,9 @@
 
 
 $(document).ready(function () {
+//     if($(window).width() > 768){
+//         alert(1);
+//   }
     // var btn_menu = $('#btn-menu');
     // var class_left_side = $('.fixed.left-side>#krb-aside');
     // var center_side = $('.center-side'), clicked = 0;
@@ -20,6 +23,8 @@ $(document).ready(function () {
     //     }
 
     // })
+    // console.log(Response.viewportW());
+
     var btn_menu = $('#btn-menu');
     var class_left_side = $('.left-side');
     // var class_left_side = $('.fixed .left-side');
