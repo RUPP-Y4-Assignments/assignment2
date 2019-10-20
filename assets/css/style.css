@@ -1,5 +1,8 @@
 /* @import url('https://fonts.googleapis.com/css?family=Moul|Moulpali&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Khmer|Moulpali&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Khmer|Koulen|Moulpali&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Khmer|Koulen|Moulpali|Nokora&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Siemreap&display=swap');
 @font-face {
     font-family: 'icomoon';
     src: url("../../lib/fonts/icomoon/icomoon.eot?srf3rx");
@@ -96,15 +99,15 @@ body{
 }
     /* footer menu */
 #krb-aside .krb-footer{
+    font-family: 'Siemreap', cursive;
     margin-top: 20px;
     position: absolute;
     bottom: 40px;
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
     width: 100%;
     height: 15%;
     font-weight: 400;
-    background-color: orchid;
     color: #020202ea;
     padding: 35px 20px;
     box-sizing: border-box;
