@@ -2,44 +2,31 @@
 
 
 $(document).ready(function () {
-//     if($(window).width() > 768){
-//         alert(1);
-//   }
-    // var btn_menu = $('#btn-menu');
-    // var class_left_side = $('.fixed.left-side>#krb-aside');
-    // var center_side = $('.center-side'), clicked = 0;
-    // btn_menu.click(function () {
-    //     // class_left_side.css({"display":"block"})
-
-    //     if (clicked == 0) {
-    //         class_left_side.css({'width':'70%','overflow-y':'scroll'})
-    //         class_left_side.show()
-    //         center_side.css({'left':'70%','width': '30%' ,'transition':'0.5s'})
-    //         clicked = 1;
-    //     } else {
-    //         class_left_side.hide()
-    //         center_side.css({ 'left': '0', 'width': '100%' })
-    //         clicked = 0;
-    //     }
-
-    // })
-    // console.log(Response.viewportW());
-
     var btn_menu = $('#btn-menu');
-    var class_left_side = $('.left-side');
-    // var class_left_side = $('.fixed .left-side');
-    var center_side = $('.center-side'), clicked = 0;
+    var btn_sub_menu = $('#btn-sub-menu');
+    var class_left_side = $('.left-side') , right_side = $('.right-side');
+    var center_side = $('.center-side'), clicked = 0, clickedd = 0;
 
     btn_menu.click(function () {
-
         if (clicked == 0) {
-            class_left_side.css({'left':'0','transition':'0.5s'});
-            center_side.css({'left':'50%','transition':'0.5s'});
+            class_left_side.css({ 'left': '0', 'transition': '0.5s'});
+            center_side.css({ 'left': '50%', 'transition': '0.5s' });
             clicked = 1;
         } else {
-            class_left_side.css({'left':'-50%','transition':'0.5s'});
-            center_side.css({ 'left': '0','transition':'0.5s'});
+            class_left_side.css({ 'left': '-50%', 'transition': '0.5s' });
+            center_side.css({ 'left': '0', 'transition': '0.5s' });
             clicked = 0;
+        }
+    });
+    btn_sub_menu.click(function () {
+        if (clickedd == 0) {
+            right_side.css({ 'right': '0', 'transition': '0.5s'});
+            center_side.css({ 'left': '-50%', 'transition': '0.5s' });
+            clickedd = 1;
+        } else {
+            right_side.css({ 'right': '-50%', 'transition': '0.5s' });
+            center_side.css({ 'left': '0', 'transition': '0.5s' });
+            clickedd = 0;
         }
 
     });

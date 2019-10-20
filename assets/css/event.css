@@ -149,6 +149,37 @@
     background: rgba(0,0,0,.1);
 }
 /* responsive */
-@media screen and (max-width: 768px) {
-    
-  }
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .title-blog h1{
+        font-size: 14px;
+    }
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .title-blog h1{
+        font-size: 20px;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .title-blog h1{
+        font-size: 20px;
+    }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .title-blog h1{
+        font-size: 20px;
+    }
+ }
+
+/* // Extra large devices (large desktops, 1200px and up)​ */
+@media (min-width: 1200px) { 
+    .title-blog h1{
+        font-size: 28px;
+    }
+ }

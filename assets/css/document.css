@@ -1,7 +1,27 @@
 .center-side{
     width: 70%;
 }
-
+.menu-side{
+    padding: 20px 0 0 0;
+    display: none;
+}
+.menu-side #btn-menu, #btn-sub-menu{
+    /* background: red; */
+    /* float: left; */
+    width: 50%;
+    padding: 10px;
+    font-size: 35px;
+    color: black; 
+}
+.menu-side #btn-menu i{
+    float: left;
+    margin-left: -4px;
+}
+.menu-side #btn-sub-menu i{
+    float: right;
+    margin-right: -4px;
+    margin-top: -12px;
+}
 .wrap-menu{
     list-style: none;
     margin: 0;
@@ -43,8 +63,14 @@
     padding: 30px;
     box-sizing: border-box;
 }
+.a-b-video{
+    height: auto;
+    margin-bottom: 10px;
+}
 .an-image{
     border-left: 1px solid white;
+    height: auto;
+    margin-bottom: 10px;
 }
 .text p{
     font-size: 19px;
@@ -53,3 +79,101 @@
     width: 80%;
     margin: auto;
 }
+
+/* responsive */
+@media (max-width: 576px) { 
+    .left-side.fixed{
+        left: -50%;
+        width: 50%;
+    }
+    .fixed.right-side{
+        right: -50%;
+        width: 50%;
+        z-index: 8;
+    }
+    .center-side{
+        left: 0;
+        width: 100%;
+        z-index: 9;
+    }
+    .menu-side{
+        display: block;
+        padding: 5px 0 0 0;
+    }
+}
+@media (min-width: 576px) { 
+    .left-side.fixed{
+        left: -50%;
+        width: 50%;
+    }
+    .fixed.right-side{
+        right: -50%;
+        width: 50%;
+        z-index: 8;
+    }
+    .center-side{
+        left: 0;
+        width: 100%;
+        z-index: 9;
+    }
+    .menu-side{
+        display: block;
+        padding: 5px 0 0 0;
+    }
+}
+ 
+ @media (min-width: 768px) {
+    .left-side.fixed{
+        left: -50%;
+        width: 50%;
+    }
+    .fixed.right-side{
+        right: -50%;
+        width: 50%;
+        z-index: 8;
+    }
+    .center-side{
+        left: 0 !important;
+        width: 100%;
+        z-index: 9;
+    }
+    .menu-side{
+        display: block;
+    }
+}
+ 
+ @media (min-width: 992px) {
+    .fixed.left-side{
+        left: 0;
+        width: 20%;
+    }
+    .fixed.right-side{
+        right: 0;
+        width: 20%;
+    }
+    .center-side{
+        left: 20% !important;
+        width: 60%;
+    }
+    .menu-side{
+        display: none;
+    }
+ }
+/* // Extra large devices (large desktops, 1200px and up)​ */
+@media (min-width: 1200px) { 
+    .fixed.left-side{
+        left: 0;
+        width: 15%;
+    }
+    .fixed.right-side{
+        width: 20%;
+    }
+    .center-side{
+        left: 15% !important;
+        width: 65%;
+    }
+    .menu-side{
+        display: none;
+    }
+ } 
+ 

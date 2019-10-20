@@ -67,6 +67,7 @@ body{
     background: rgb(214, 209, 209); height: 100vh;
     overflow-x: hidden;
     direction: rtl;
+    transition: 0.4s;
 }
 
             /* set customize style of menu */
@@ -176,7 +177,7 @@ body{
 
 /* Small devices (landscape phones, 576px and down) */
 @media (max-width: 576px) { 
-    /* .fixed.left-side{
+    .fixed.left-side{
         left: -50%;
         width: 50%;
         z-index: 9;
@@ -192,11 +193,11 @@ body{
     } 
     #btn-menu{
         display: block;
-    } */
+    }
  }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
-    /* .fixed.left-side{
+    .fixed.left-side{
         left: -50%;
         width: 50%;
         z-index: 9;
@@ -212,12 +213,12 @@ body{
     }
     #btn-menu{
         display: block;
-    }  */
+    }  
  }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {  
-    /* .fixed.left-side{
+    .fixed.left-side{
         left: -50%;
         width: 50%;
         z-index: 9;
@@ -234,12 +235,12 @@ body{
     #btn-menu{
         display: block;
     }
-     */
+    
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    /* .fixed.left-side{
+    .fixed.left-side{
         left: 0;
         width: 20%;
         z-index: 9;
@@ -255,12 +256,12 @@ body{
     }
     #btn-menu{
         display: none;
-    } */
+    }
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-    /* .fixed.left-side{
+    .fixed.left-side{
         left: 0;
         width: 15%;
         z-index: 9;
@@ -276,6 +277,5 @@ body{
     }
     #btn-menu{
         display: none;
-    } */
+    }
 }
-  

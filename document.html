@@ -53,7 +53,7 @@
             <h1 id="krb-logo" style="text-align: center"><a href="index.html">Marble</a></h1> <br>
             <!-- main menu -->
             <nav id="krb-main-menu" role="navigation">
-                <ul style="">
+                <ul>
                     <li class="krb-active"><a class="btn-krb btn-krb-effect-bot-bor"
                             href="index.html">ទំព័រដើម</a></li>
                     <li><a class="btn-krb btn-krb-effect-bot-bor" href="blog.html">ឯកសារ</a></li>
@@ -74,7 +74,7 @@
         </aside>
     </div>
     <!-- right -->
-    <div class="right-side fixed" style="background: white;" style="width: 15%;"> 
+    <div class="right-side fixed"> 
         <ul class="wrap-menu">
             <li><a class="oupakor" href="#">ឧបករណ៍ភ្លេងខ្មែរ<i class="fas fa-chevron-right right" style="float: right; margin-top: 5px;"></i></a>
                 <div class="sub-menu-1">
@@ -110,10 +110,14 @@
     <!-- wrapper page -->
     <div id="krb-page">
         <!-- center side -->
-        <div class="center-side" style="width: 70;left: 15%;">
+        <div class="center-side">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xl-12 content">
+                <div class="row"><div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 header">
+                    <div class="menu-side">
+                        <span id="btn-menu"><i class="icon-th-menu "></i></span>
+                        <span id="btn-sub-menu"><i class="icon-th-menu "></i></span>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 content">
                         <div class="wrap-content">
                             <div class="user-profile">
                                 <!-- <img src="images/lymeng.jpg"> -->
@@ -226,5 +230,7 @@
             $('.sub-menu-2').slideToggle();
         });
     });
+
+    // alert(1)
 </script>
 </html>
