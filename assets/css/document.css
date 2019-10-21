@@ -40,7 +40,6 @@
 .sub-menu-1, .sub-menu-2{
     width: 100%;
     display: none;
-    /* background: orchid; */
 }
 .sub-menu-1 ul, .sub-menu-2 ul{
     list-style: none;
@@ -51,12 +50,10 @@
     text-decoration: none;
     display: block;
     padding: 5px 20px;
-    /* background: orange; */
 
 }
-.sub-menu-1 ul li a:hover, .sub-menu-2 ul li{
-    /* background: orangered; */
-    border-right: 3px solid dodgerblue;
+.sub-menu-1 ul li a:hover, .sub-menu-2 ul li:hover{
+    border-right: 3px solid dodgerblue !important;
 }
 .text, .image, .b-video{
     font-family: 'Khmer', cursive;
@@ -144,9 +141,6 @@
         display: block;
         padding-top: 20px;
         box-sizing: border-box;
-    }
-    #btn-menu{
-        display: block;
     }
 }
  
