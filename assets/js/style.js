@@ -2,7 +2,8 @@
 
 
 $(document).ready(function () {
-    var btn_menu = $('#btn-menu');
+    var btn_menu_1 = $('span#btn-menu-1');
+    var btn_menu = $('span#btn-menu');
     var btn_sub_menu = $('#btn-sub-menu');
     var class_left_side = $('.left-side') , right_side = $('.right-side');
     var center_side = $('.center-side'), clicked = 0, clickedd = 0;
@@ -28,6 +29,18 @@ $(document).ready(function () {
             center_side.css({ 'left': '0', 'transition': '0.5s' });
             clickedd = 0;
         }
-
+    });
+    btn_menu_1.click(function () {
+        if (clicked == 0) {
+            class_left_side.css({ 'left': '0', 'transition': '0.5s'});
+            center_side.css({ 'left': '50%', 'transition': '0.5s' });
+            right_side.css({ 'right': '-40%', 'transition': '0.5s' });
+            clicked = 1;
+        } else {
+            class_left_side.css({ 'left': '-50%', 'transition': '0.5s' });
+            center_side.css({ 'left': '0', 'transition': '0.5s' });
+            right_side.css({ 'right': '0', 'transition': '0.5s' });
+            clicked = 0;
+        }
     });
 });

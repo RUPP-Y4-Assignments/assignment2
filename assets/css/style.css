@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Khmer|Koulen|Moulpali&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Khmer|Koulen|Moulpali|Nokora&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Siemreap&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Siemreap&display=swap');
 @font-face {
     font-family: 'icomoon';
     src: url("../../lib/fonts/icomoon/icomoon.eot?srf3rx");
@@ -13,7 +14,7 @@
 body{
     position: relative;
     max-width: 100%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 /* wrpper page */
 #krb-page{
@@ -53,7 +54,7 @@ body{
     position: absolute;
     width: 85%;
     top: 0;
-    left: 15%; 
+    left: 15%;
 }
 .content{
     width: 100%;
@@ -64,7 +65,8 @@ body{
     top: 0;
     right: 0;
     width: 15%;
-    background: rgb(214, 209, 209); height: 100vh;
+    background: rgb(214, 209, 209); 
+    height: 100vh;
     overflow-x: hidden;
     direction: rtl;
     transition: 0.4s;
@@ -73,6 +75,19 @@ body{
             /* set customize style of menu */
 /* start */
             /* main menu */
+#krb-aside{
+    margin-top: 0;
+    padding-top: 0;
+}
+#krb-logo{
+    width: 100%;
+    height: 150px;
+    background: yellow;
+}
+#krb-logo img{
+    width: 100%;
+    height: 100%;
+}
 #krb-aside #krb-main-menu ul{
     display: grid;
     justify-content: center;
@@ -80,6 +95,7 @@ body{
     text-align: center;
     margin: 0;
     padding: 0;
+    padding-top: 30px;
 }
 
 #krb-aside #krb-main-menu ul li{
@@ -138,13 +154,21 @@ body{
 /* end */
 #krb-page #krb-aside-slide{
     width: 100%;
-    /* height: 100vh; */
+    height: 100vh;
+    overflow: hidden;
+}
+#krb-page .krb-aside-slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #krb-aside-slide .krb-bg-slide{
     width: 100%;
     height: 100vh;
-    /* background: red; */
     position: relative;
 }
 
@@ -161,17 +185,83 @@ body{
     right: 0;
     width: 100%;
     height: 100%;
-    /* background: rgba(48, 48, 48, 0.678); */
+    background: rgba(48, 48, 48, 0.678);
 }
-/* .krb-bg-cover #btn-menu{ */
-    /* display: none; */
-    /* position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 35px;
-    color: white;
+.back, .next{
+    position: absolute;
+    top: 50%;
+    /* width: 50px; */
+    /* height: 50px; */
+    background: rgba(236, 54, 54, 0.205);
+        z-index: 100000;
     cursor: pointer;
-} */
+    color: #ffffff;
+}
+
+.back:hover{
+    background: rgba(236, 54, 54, 0.603);
+}
+
+.next:hover{
+    background: rgba(236, 54, 54, 0.603);
+}
+
+.next i{
+    padding: 20px;
+    font-size: 35px;
+}
+
+.back i{
+    padding: 20px;
+    font-size: 35px;
+}
+
+.back{
+    left: 5%;
+}
+.next{
+    right: 5%;
+}
+.wrap-content-slide{
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: 30%;
+    background: rgba(48, 48, 48, 0.2);
+    padding: 30px;
+}
+.pharagraph{
+    text-align: justify;
+    color: white;
+    font-size: 30px;
+    font-family: 'Siemreap', cursive;
+}
+.link-button{
+    float: right;
+    text-decoration: none !important;
+    font-size: 30px;
+    padding: 10px 20px;
+    color: black;
+    background: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.link-button:hover{
+    transition: 0.5s;
+    color: white;
+    background: dodgerblue;
+    border-color: dodgerblue;
+}
+
+.on-slide{
+    position: absolute;
+    top: 1.5%;
+    left: 1.5%;
+    padding: 10px;
+    font-size: 35px;
+    /* background: rgba(250, 53, 53, 0.788); */
+}
 
 /* query responsive */
 
@@ -229,8 +319,9 @@ body{
         left: 0;
         z-index: 8;
     }
-    #krb-aside-slide{
-        background: violet;
+    #krb-aside-slide img{
+        width: 100%;
+        height: 100%;
     } 
     #btn-menu{
         display: block;

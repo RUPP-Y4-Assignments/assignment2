@@ -50,16 +50,20 @@
     <div id="left-side" class="left-side fixed">
         <aside id="krb-aside">
             <!-- logo -->
-            <h1 id="krb-logo" style="text-align: center"><a href="index.html">Marble</a></h1> <br>
+            <a href="index2.html">
+                <div id="krb-logo">
+                    <img src="images/logo.png">
+                </div>
+            </a>
             <!-- main menu -->
             <nav id="krb-main-menu" role="navigation">
                 <ul>
                     <li class="krb-active"><a class="btn-krb btn-krb-effect-bot-bor"
-                            href="index.html">ទំព័រដើម</a></li>
-                    <li><a class="btn-krb btn-krb-effect-bot-bor" href="blog.html">ឯកសារ</a></li>
-                    <li><a class="btn-krb btn-krb-effect-bot-bor" href="portfolio.html">ប្លក់</a></li>
-                    <li><a class="btn-krb btn-krb-effect-bot-bor" href="about.html">ព្រឹត្តិការណ៏</a></li>
-                    <li><a class="btn-krb btn-krb-effect-bot-bor" href="contact.html">អំពីយើង</a></li>
+                            href="index2.html">ទំព័រដើម</a></li>
+                    <li><a class="btn-krb btn-krb-effect-bot-bor" href="document.html">ឯកសារ</a></li>
+                    <li><a class="btn-krb btn-krb-effect-bot-bor" href="blog.html">ប្លក់</a></li>
+                    <li><a class="btn-krb btn-krb-effect-bot-bor" href="event.html">ព្រឹត្តិការណ៏</a></li>
+                    <li><a class="btn-krb btn-krb-effect-bot-bor" href="about-us.html">អំពីយើង</a></li>
                 </ul>
             </nav>
             <!-- footer menu -->
@@ -113,9 +117,11 @@
         <div class="center-side">
             <div class="container-fluid">
                 <div class="row"><div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 header">
+                    <div class="fixed-top-menu">
                     <div class="menu-side">
                         <span id="btn-menu"><i class="icon-th-menu "></i></span>
                         <span id="btn-sub-menu"><i class="icon-th-menu "></i></span>
+                    </div>
                     </div>
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 content">
                         <div class="wrap-content">
@@ -192,11 +198,11 @@
         $('.oupakor').click(function(){
             k = 0;
             $('.sub-menu-2').slideUp(100);
-            $('.vongphleng').css({"background":"orange"});
+            $('.vongphleng').css({"background":"rgb(219, 217, 217)"});
             $('.vongphleng').find($(".right")).removeClass('fa-chevron-down');
             $('.vongphleng').find($(".right")).addClass('fa-chevron-right');
             if(i == 0){
-                $('.oupakor').css({"background":"yellow"});
+                $('.oupakor').css({"background":"rgb(216, 215, 213)"});
                 $('.oupakor').find($(".right")).addClass('fa-chevron-down');
                 $('.oupakor').find($(".right")).removeClass('fa-chevron-right');
                 i=1;
@@ -211,12 +217,12 @@
         });
         $('.vongphleng').click(function(){
             i = 0;
-            $('.oupakor').css({"background":"orange"});
+            $('.oupakor').css({"background":"rgb(219, 217, 217)"});
             $('.sub-menu-1').slideUp(100);
             $('.oupakor').find($(".right")).removeClass('fa-chevron-down');
                 $('.oupakor').find($(".right")).addClass('fa-chevron-right');
             if(k == 0){
-                $('.vongphleng').css({"background":"yellow"});
+                $('.vongphleng').css({"background":"rgb(216, 215, 213)"});
                 $('.vongphleng').find($(".right")).addClass('fa-chevron-down');
                 $('.vongphleng').find($(".right")).removeClass('fa-chevron-right');
                 k=1;

@@ -1,3 +1,9 @@
+.menu-side{
+    font-size: 35px;
+}
+#btn-menu-1{
+    display: none;
+}
 .fixed.right-side{
     width: 25% !important;
     padding: 10px;
@@ -21,8 +27,6 @@
     box-sizing: border-box;
     margin: 0;
     box-shadow: 0 0 1px rgba(34, 25, 25, 0.2);
-}
-.p-blog li{
 }
 .p-blog li a{
     width: 100%;
@@ -119,34 +123,75 @@
     height: auto;
     border-bottom: 1px solid white;
 }
+.rank{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+.rank.p-blog{
+    padding: 0;
+}
 @media (max-width: 576px) {
-
-}
-@media (min-width: 576px) {
-
-}
-
-@media (min-width: 768px) {
     .fixed.left-side{
-        left: -50% !important;
+        left: -50%;
         width: 50% !important;
         z-index: 10;
         background: white;
     }
     .fixed.right-side{
+        display: none;
         width: 30% !important;
         z-index: 9;
         background: white;
     }
     .center-side{
-        width: 70% !important;
-        left: 0 !important;
+        width: 100% !important;
+        left: 0;
         z-index: 8;
     }
-    #krb-aside-slide{
-        background: red;
+    .menu-side{
+        display: block;
+    }
+    #btn-menu-1{
+        display: none;
+    }
+    #btn-menu{
+        display: block;
+    }
+    .drop-profile{
+        top: 74.5%;
+        right: 10px;
+        width: 12.4% !important;
+    }
+    .p-blog{
+        width: 100%;
+    }
+}
+@media (min-width: 576px) {
+    .fixed.left-side{
+        left: -50%;
+        width: 50% !important;
+        z-index: 10;
+        background: white;
+    }
+    .fixed.right-side{
+        display: none;
+        width: 30% !important;
+        z-index: 9;
+        background: white;
+    }
+    .center-side{
+        width: 100% !important;
+        left: 0;
+        z-index: 8;
     }
     .menu-side{
+        display: block;
+    }
+    #btn-menu-1{
+        display: none;
+    }
+    #btn-menu{
         display: block;
     }
     .drop-profile{
@@ -159,24 +204,68 @@
     }
 }
 
+@media (min-width: 768px) {
+    .fixed.left-side{
+        left: -50%;
+        width: 50% !important;
+        z-index: 10;
+        background: white;
+    }
+    .fixed.right-side{
+        display: block;
+        width: 40% !important;
+        z-index: 9;
+        background: white;
+    }
+    .center-side{
+        width: 60% !important;
+        left: 0;
+        z-index: 8;
+    }
+    .menu-side{
+        display: block;
+    }
+    #btn-menu{
+        display: none;
+    }
+    #btn-menu-1{
+        display: block;
+    }
+    .drop-profile{
+        top: 74.5%;
+        right: 10px;
+        width: 12.4% !important;
+    }
+    .rank{
+        display: none;
+    }
+    .p-blog{
+        width: 100%;
+    }
+}
+
 @media (min-width: 992px) {
     .fixed.left-side{
-        left: -50% !important;
-        width: 50% !important;
+        left: 0 !important;
+        width: 23% !important;
         z-index: 9;
         background: white;
     }
     .fixed.right-side{
-        width: 25% !important;
+        display: block;
+        width: 27% !important;
         z-index: -1;
         background: white;
     }
+    .rank{
+        display: none;
+    }
     .center-side{
-        width: 75% !important;
-        left: 20% !important;
+        width: 50% !important;
+        left: 23% !important;
         z-index: 12;
     }
-    #btn-menu{
+    .menu-side{
         display: none;
     }
     .drop-profile{
@@ -192,14 +281,18 @@
 @media (min-width: 1200px) {
     .fixed.left-side{
         left: 0 !important;
+        width: 15% !important;
+        z-index: 9;
+        background: white;
+    }
+    .fixed.right-side{
+        display: block;
         width: 25% !important;
         z-index: 9;
         background: white;
     }
-    .fixed.left-side{
-        width: 15% !important;
-        z-index: 9;
-        background: white;
+    .rank{
+        display: none;
     }
     .center-side{
         width: 60% !important;
@@ -209,7 +302,7 @@
     #krb-aside-slide{
         background: red;
     }
-    #btn-menu{
+    .menu-side{
         display: none;
     }
     .drop-profile{
